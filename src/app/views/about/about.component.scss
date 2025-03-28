@@ -1,0 +1,86 @@
+$pastel-purple: #d8b4fe;
+$dark-purple: #7e22ce;
+$text-color: #4a047a;
+$hover-purple: #a855f7;
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+mat-card {
+  background-color: white;
+  border: 2px solid $pastel-purple;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+  background-color: lighten($pastel-purple, 30%);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $text-color;
+}
+
+mat-icon {
+  color: $dark-purple;
+  font-size: 28px;
+}
+
+mat-card-content {
+  font-size: 1rem;
+  color: $text-color;
+  margin-top: 10px;
+}
+
+mat-accordion {
+  margin-top: 20px;
+}
+
+mat-expansion-panel {
+  margin-top: 10px;
+}
+
+mat-expansion-panel-header {
+  background-color: $pastel-purple;
+  color: white;
+  font-weight: bold;
+}
+
+mat-expansion-panel-header:hover {
+  background-color: darken($pastel-purple, 10%);
+}
+
+mat-panel-title {
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1rem;
+  color: $text-color;
+}
+
+button[mat-button] {
+  background-color: $pastel-purple;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:hover {
+    background-color: darken($pastel-purple, 10%);
+    transform: scale(1.05);
+  }
+}

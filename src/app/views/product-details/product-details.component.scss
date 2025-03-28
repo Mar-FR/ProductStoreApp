@@ -1,0 +1,63 @@
+$pastel-purple: #d8b4fe;
+$dark-purple: #7e22ce;
+$text-color: #4a047a;
+$hover-purple: #a855f7;
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+mat-card {
+  background-color: white;
+  border: 2px solid $pastel-purple;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: $text-color;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: $text-color;
+  margin-bottom: 10px;
+
+  strong {
+    color: $dark-purple;
+  }
+}
+
+button[mat-raised-button] {
+  background-color: $pastel-purple;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:hover {
+    background-color: darken($pastel-purple, 10%);
+    transform: scale(1.05);
+  }
+}
+
+button.ms-2 {
+  margin-left: 10px;
+}
+
+button[mat-raised-button][color="primary"] {
+  background-color: $dark-purple;
+}
+
+button[mat-raised-button][color="primary"]:hover {
+  background-color: darken($dark-purple, 10%);
+}

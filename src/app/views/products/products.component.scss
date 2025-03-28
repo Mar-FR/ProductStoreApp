@@ -1,0 +1,46 @@
+$pastel-purple: #d8b4fe;
+$dark-purple: #7e22ce;
+$hover-purple: #a855f7;
+$text-color: #4a047a;
+
+.container {
+  background-color: lighten($pastel-purple, 10%);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: $text-color;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-dark {
+  background-color: $dark-purple;
+  color: white;
+}
+
+.table-hover tbody tr:hover {
+  background-color: lighten($hover-purple, 20%);
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[mat-icon-button] {
+  background-color: $hover-purple;
+  color: white;
+  border-radius: 50%;
+  transition: transform 0.2s, background-color 0.3s;
+
+  &:hover {
+    background-color: darken($hover-purple, 10%);
+    transform: scale(1.1);
+  }
+}
+
+mat-icon {
+  font-size: 24px;
+}
